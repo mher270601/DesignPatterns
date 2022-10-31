@@ -17,6 +17,8 @@ public:
 		++m_int;
 	}
 private:
+	Game(const Game& rhs) = delete;
+	Game& operator=(const Game& rhs) = delete;
 	Game() = default;
 	int m_int = 10;
 	std::string m_expr = "My Game Class";
